@@ -12,7 +12,7 @@ jobs:
         node-version: [16.x]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
         with:
           token: ${{ secrets.WORKSHOP6_GITHUB_TOKEN }}
       - uses: browser-actions/setup-chrome@latest
@@ -69,3 +69,4 @@ jobs:
       - name: Deploy
         run: |
           npm run deploy
+
